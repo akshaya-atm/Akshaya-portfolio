@@ -259,6 +259,11 @@
     .hero_content {
         align-items: center;
         width: 100%;
+        order: 2;
+    }
+
+    .hero_image {
+        order: 1;
     }
 
     .hero_headline {
