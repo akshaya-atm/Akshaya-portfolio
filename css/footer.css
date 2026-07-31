@@ -1,0 +1,148 @@
+/* =========================================
+             CONTACT SECTION
+========================================= */
+
+.contact_section {
+    scroll-margin-top: 110px;
+    max-width: 1100px;
+    width: calc(100% - 40px);
+    margin: 30px auto;
+    background-color: var(--section-color);
+    padding: 30px 45px;
+    border-radius: 32px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.02);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact_subtitle {
+    color: #5E6482;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.contact_links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+}
+
+.contact_link_btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    background-color: white;
+    border: 1px solid var(--border-color);
+    border-radius: 50px;
+    padding: 0.75rem 1.75rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #5E6482;
+    text-decoration: none;
+    transition: all var(--transition);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.01);
+}
+
+.contact_svg,
+.contact_link_btn i {
+    width: 16px;
+    height: 16px;
+    font-size: 1.05rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    line-height: 1;
+}
+
+/* Hover Accent Colors for individual brand buttons */
+.email_btn:hover {
+    color: #10B981;
+    border-color: #10B981;
+    background-color: rgba(16, 185, 129, 0.03);
+    box-shadow: 0 6px 15px rgba(16, 185, 129, 0.1);
+    transform: translateY(-2px);
+}
+
+.linkedin_btn:hover {
+    color: #0077B5;
+    border-color: #0077B5;
+    background-color: rgba(0, 119, 181, 0.03);
+    box-shadow: 0 6px 15px rgba(0, 119, 181, 0.1);
+    transform: translateY(-2px);
+}
+
+.github_btn:hover {
+    color: #24292F;
+    border-color: #24292F;
+    background-color: rgba(36, 41, 47, 0.03);
+    box-shadow: 0 6px 15px rgba(36, 41, 47, 0.1);
+    transform: translateY(-2px);
+}
+
+.resume_btn:hover {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    background-color: rgba(109, 93, 246, 0.03);
+    box-shadow: 0 6px 15px rgba(109, 93, 246, 0.1);
+    transform: translateY(-2px);
+}
+
+/* =========================================
+                 FOOTER
+========================================= */
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem 0 3rem 0;
+    margin-top: 1rem;
+}
+
+.footer_text {
+    color: #8E95B2;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* =========================================
+            RESPONSIVE STYLING
+========================================= */
+
+@media (max-width: 768px) {
+    .contact_section {
+        padding: 30px 20px;
+        margin: 20px auto;
+        width: calc(100% - 32px);
+        border-radius: 24px;
+    }
+
+    .contact_content {
+        gap: 1.25rem;
+    }
+
+    .contact_subtitle {
+        font-size: 1rem;
+    }
+
+    .contact_link_btn {
+        width: 100%;
+        justify-content: center;
+        padding: 0.7rem 1.5rem;
+    }
+}

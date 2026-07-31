@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshaya | Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" onerror="document.body.classList.add('no-devicons')">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="navbar">
+    <nav class="navbar_container">
+        <div class="navbar_brand">
+            <div class="navbar_logo">Akshaya</div>
+            <div class="navbar_status">
+                <span class="status_dot"></span>Open for opportunities
+            </div>
+        </div>
+        <ul class="navbar_menu">
+            <li class="navbar_item">
+                <a href="#home" class="navbar_link">Home</a>
+            </li>
+            <li class="navbar_item">
+                <a href="#about" class="navbar_link">About</a>
+            </li>
+
+            <li class="navbar_item navbar_dropdown">
+                <a href="#projects" class="navbar_link">
+                    Projects
+                    <span class="dropdown_arrow">⌄</span>
+                </a>
+                <ul class="dropdown_menu">
+                    <li class="dropdown_item">
+                        <a href="#projects" class="dropdown_link">All Projects</a>
+                    </li>
+                    <li class="dropdown_item">
+                        <a href="#projects" class="dropdown_link" data-filter="ai">AI Applications</a>
+                    </li>
+                    <li class="dropdown_item">
+                        <a href="#projects" class="dropdown_link" data-filter="java">Backend Apps</a>
+                    </li>
+                    <li class="dropdown_item">
+                        <a href="#projects" class="dropdown_link" data-filter="web">Web Applications</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="navbar_item">
+                <a href="assets/resume.pdf" class="navbar_link">
+                    Resume
+                </a>
+            </li>
+            <li class="navbar_item">
+                <a href="#contact" class="navbar_link">Contact</a>
+            </li>
+        </ul>
+
+        <div class="navbar_social">
+            <a href="https://github.com/akshaya-atm" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i class="devicon-github-original colored"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/akshaya-atm/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="devicon-linkedin-plain colored"></i>
+            </a>
+            <a href="mailto:atm.akshaya87@gmail.com" aria-label="Email">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+        </div>
+
+    </nav>
+
+</header>
+<main>
+    <section id="home" class="hero">
+        <div class="hero_content">
+            <p class="hero_greeting">
+                Hello, I'm Akshaya
+            </p>
+    
+            <h1 class="hero_headline">
+                Building robust backends, APIs & <span class="highlight_container"><span class="highlight_icon">⚡</span><span class="highlight_word">AI solutions.</span></span>
+            </h1>
+    
+            <p class="hero_description">
+                I am a <strong>Java Backend Developer</strong> specialized in architecting scalable systems, high-performance REST APIs, and database workflows using <strong>Spring Boot</strong>, <strong>PostgreSQL</strong>, and <strong>LangChain4j</strong>.
+            </p>
+    
+            <div class="hero_buttons">
+    
+                <a href="#projects" class="hero_button primary_button">
+                    Explore Projects
+                </a>
+    
+                <a href="#contact" class="hero_button secondary_button">
+                    Contact Me
+                </a>
+    
+            </div>
+        </div>
+
+        <div class="hero_image">
+            <div class="profile_frame">
+                <img src="assets/profile.jpg" alt="Akshaya Ayyasamy Thiravida Mani" class="profile_img">
+            </div>
+        </div>
+        <div class="scroll_down_container">
+            <a href="#about" class="scroll_down" aria-label="Scroll down to About Me">
+                <span class="scroll_arrow">↓</span>
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="about_section">
+        <div class="section_title_block">
+            <h2 class="section_title">About Me</h2>
+        </div>
+
+        <div class="about_grid">
+            <div class="about_left">
+                <h3 class="about_subtitle">My Journey</h3>
+                <p class="about_text">
+                    I am a Java developer focused on building backend applications with clean architecture and practical problem-solving.
+                </p>
+                <p class="about_text">
+                    I work with Java, REST APIs, PostgreSQL, Maven, and Git. Currently, I am expanding my backend development skills with Spring Boot and exploring AI application development using LangChain4j and AI APIs.
+                </p>
+                <p class="about_text">
+                    Through my projects, I showcase my ability to build backend systems, database-driven applications, and AI-powered features.
+                </p>
+
+                <div class="about_callout">
+                    <p><strong>Open for Opportunities:</strong> Ready to contribute Zoho-trained backend expertise, clean API design, and practical AI integrations to a forward-thinking development team.</p>
+                </div>
+            </div>
+
+            <div class="about_right">
+                <h3 class="about_subtitle">Skills & Technologies</h3>
+
+                <div class="skills_container">
+                    <div class="skills_category">
+                        <h4>Backend Development</h4>
+                        <div class="skills_list">
+                            <span class="skill_chip"><i class="devicon-java-plain colored"></i> Java</span>
+                            <span class="skill_chip">🌐 REST APIs</span>
+                            <span class="skill_chip"><i class="devicon-postgresql-plain colored"></i> PostgreSQL</span>
+                            <span class="skill_chip"><i class="devicon-maven-plain colored"></i> Maven</span>
+                            <span class="skill_chip"><i class="devicon-git-plain colored"></i> Git</span>
+                        </div>
+                    </div>
+    
+                    <div class="skills_category">
+                        <h4>Frameworks & Web</h4>
+                        <div class="skills_list">
+                            <span class="skill_chip"><i class="devicon-spring-plain colored"></i> Spring Boot</span>
+                            <span class="skill_chip"><i class="devicon-html5-plain colored"></i> HTML</span>
+                            <span class="skill_chip"><i class="devicon-css3-plain colored"></i> CSS</span>
+                            <span class="skill_chip"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+                        </div>
+                    </div>
+    
+                    <div class="skills_category">
+                        <h4>AI Application Development</h4>
+                        <div class="skills_list">
+                            <span class="skill_chip">🦜 LangChain4j</span>
+                            <span class="skill_chip">🤖 LLM APIs</span>
+                            <span class="skill_chip">⚡ AI Integration</span>
+                        </div>
+                    </div>
+                </div> <!-- Closes .skills_container -->
+            </div> <!-- Closes .about_right -->
+        </div> <!-- Closes .about_grid -->
+
+        <!-- Arrow to Projects Section (Centred) -->
+        <div class="section_arrow_container">
+            <a href="#projects" class="section_arrow_btn">↓</a>
+        </div>
+    </section>
+
+
+
+    <section id="projects" class="project_section">
+        <div class="projects_header_row">
+            <h2 class="section_title">Projects</h2>
+            <!-- Category Tabs Control -->
+            <div class="project_tabs">
+                <button class="project_tab_btn active" data-category="ai">AI Applications</button>
+                <button class="project_tab_btn" data-category="web">Web Applications</button>
+                <button class="project_tab_btn" data-category="java">Backend Applications</button>
+            </div>
+        </div>
+
+        <div class="projects_divider"></div>
+
+        <!-- Dynamic Category Title -->
+        <h3 class="selected_category_title" id="selected-category-title">AI Applications</h3>
+
+        <!-- Dynamic Projects Container -->
+        <div class="projects_container">
+            <!-- Featured Area -->
+            <div class="featured_projects_area">
+                <div class="featured_projects_grid" id="featured-projects-grid">
+                    <!-- Dynamically Rendered Featured Cards -->
+                </div>
+            </div>
+
+            <!-- Other Projects Area -->
+            <div class="other_projects_area" id="other-projects-area">
+                <div class="other_projects_grid" id="other-projects-grid">
+                    <!-- Dynamically Rendered Other Cards -->
+                </div>
+            </div>
+        </div>
+        <!-- Navigation Arrows -->
+        <div class="section_arrow_container double_arrows">
+            <a href="#projects" class="section_arrow_btn">↑</a>
+            <a href="#experience" class="section_arrow_btn">↓</a>
+        </div>
+    </section>
+
+    <section id="experience" class="experience_section">
+        <div class="section_title_block">
+            <h2 class="section_title">Experience</h2>
+        </div>
+
+        <div class="timeline_container">
+            <!-- Item 1: Zoho Schools -->
+            <div class="timeline_item">
+                <div class="timeline_node"></div>
+                <div class="timeline_header">
+                    <div class="timeline_title_block">
+                        <h3 class="timeline_title">Software Development Trainee</h3>
+                        <span class="timeline_company">Marupadi, Zoho Schools</span>
+                    </div>
+                    <span class="timeline_date">Jan 2026 – Jun 2026</span>
+                </div>
+                <div class="timeline_content">
+                    <p>Focusing on building strong foundations in full-stack development and data structures:</p>
+                    <ul class="timeline_list">
+                        <li><strong>Java</strong> — OOP, control structures, data structures</li>
+                        <li><strong>HTML, CSS, JavaScript</strong> — Front-end web development</li>
+                        <li><strong>Data Structures & Algorithms</strong> (DSA)</li>
+                        <li><strong>Database Management</strong> (DBMS)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Item 2: Cognizant -->
+            <div class="timeline_item">
+                <div class="timeline_node"></div>
+                <div class="timeline_header">
+                    <div class="timeline_title_block">
+                        <h3 class="timeline_title">Programmer Analyst – iOS Application Developer</h3>
+                        <span class="timeline_company">Cognizant Technology Solutions</span>
+                    </div>
+                    <span class="timeline_date">Dec 2009 – Jul 2011</span>
+                </div>
+                <div class="timeline_content">
+                    <ul class="timeline_list">
+                        <li>Developed iPad applications on iOS 3, including a touch-based signature input module.</li>
+                        <li>Implemented drag-and-drop inventory placement features and user interaction workflows.</li>
+                        <li>Worked on DBMS table design and coordinated with Java backend teams for integration.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <div class="section_arrow_container double_arrows">
+            <a href="#projects" class="section_arrow_btn">↑</a>
+            <a href="#beyond_coding" class="section_arrow_btn">↓</a>
+        </div>
+    </section>
+
+    <section id="beyond_coding" class="beyond_coding_section">
+        <div class="section_title_block">
+            <h2 class="section_title">Beyond Coding</h2>
+        </div>
+
+        <div class="beyond_grid">
+            <!-- Gardening Card -->
+            <div class="beyond_card">
+                <h3 class="beyond_card_title">🌱 Gardening</h3>
+                <div class="beyond_card_desc">
+                    <p>I enjoy gardening and creating green spaces.</p>
+                    <p>It reflects my interest in patience, learning, and nurturing things over time.</p>
+                </div>
+                <div class="beyond_image_wrapper">
+                    <img src="assets/gardening_collage.jpg" alt="Gardening photo collage" class="beyond_image">
+                </div>
+            </div>
+
+            <!-- Learning Journey Card -->
+            <div class="beyond_card">
+                <h3 class="beyond_card_title">📚 Learning Journey</h3>
+                <div class="beyond_card_desc">
+                    <p><strong>Cleared UPSC Civil Services Preliminary Examination</strong> multiple times (2015–2017).</p>
+                    <p>The journey strengthened my discipline, consistency, and ability to learn complex topics.</p>
+                </div>
+                <div class="beyond_image_wrapper">
+                    <img src="assets/upsc_achievement.jpg" alt="Learning Journey Illustration" class="beyond_image">
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <div class="section_arrow_container double_arrows">
+            <a href="#experience" class="section_arrow_btn">↑</a>
+            <a href="#contact" class="section_arrow_btn">↓</a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact_section">
+        <div class="section_title_block">
+            <h2 class="section_title">Contact Me</h2>
+        </div>
+        
+        <div class="contact_content">
+            <p class="contact_subtitle">Let's build something together.</p>
+            
+            <div class="contact_links">
+                <a href="mailto:atm.akshaya87@gmail.com" class="contact_link_btn email_btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact_svg"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> Email
+                </a>
+                <a href="https://linkedin.com/in/akshaya-atm" target="_blank" rel="noopener noreferrer" class="contact_link_btn linkedin_btn">
+                    <i class="devicon-linkedin-plain colored"></i> LinkedIn
+                </a>
+                <a href="https://github.com/akshaya-atm" target="_blank" rel="noopener noreferrer" class="contact_link_btn github_btn">
+                    <i class="devicon-github-original colored"></i> GitHub
+                </a>
+                <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="contact_link_btn resume_btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="contact_svg"><path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"/></svg> Resume
+                </a>
+            </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <div class="section_arrow_container">
+            <a href="#home" class="section_arrow_btn">↑</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer_text">© 2026 Akshaya</p>
+    </footer>
+
+</main>
+
+<script src="js/main.js"></script>
+<script src="js/projects.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+:root{
+
+    --background-color:#FFFFFF;
+    --section-color:#F8F7FC;
+
+    --primary-color:#6D5DF6;
+    --primary-hover:#5B4BE8;
+
+    --text-color:#111827;
+    --secondary-text:#6B7280;
+
+    --border-color:#E5E7EB;
+
+    --shadow-color:rgba(0,0,0,0.08);
+
+    --transition:0.3s ease;
+    --ai-gradient-start:#F8F7FC;
+    --ai-gradient-middle:#A855F7;
+
+}
