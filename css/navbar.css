@@ -279,7 +279,7 @@ body.no-scroll {
     .navbar_collapse {
         position: fixed;
         top: 0;
-        right: -100%;
+        right: 0;
         width: 280px;
         height: 100vh;
         background-color: var(--background-color);
@@ -289,14 +289,15 @@ body.no-scroll {
         align-items: flex-start;
         padding: 6rem 2rem 3rem 2rem;
         gap: 3rem;
-        transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        transform: translateX(100%);
+        transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         z-index: 1001;
         border-left: 1px solid var(--border-color);
         overflow-y: auto;
     }
 
     .navbar_collapse.active {
-        right: 0;
+        transform: translateX(0);
     }
 
     .navbar_menu {
