@@ -3,31 +3,33 @@ document.addEventListener('DOMContentLoaded', () => {
     const navbarCollapse = document.getElementById('navbar-collapse');
 
     if (navbarToggle && navbarCollapse) {
+        const closeMenu = () => {
+            navbarToggle.classList.remove('active');
+            navbarCollapse.classList.remove('active');
+            navbarToggle.setAttribute('aria-expanded', 'false');
+            document.body.classList.remove('no-scroll');
+        };
+
         // Toggle mobile menu active state
         navbarToggle.addEventListener('click', (e) => {
             e.stopPropagation();
-            navbarToggle.classList.toggle('active');
-            navbarCollapse.classList.toggle('active');
-            document.body.classList.toggle('no-scroll');
+            const isOpen = navbarCollapse.classList.toggle('active');
+            navbarToggle.classList.toggle('active', isOpen);
+            navbarToggle.setAttribute('aria-expanded', String(isOpen));
+            document.body.classList.toggle('no-scroll', isOpen);
         });
 
         // Close menu when a navigation link is clicked
         const navLinks = document.querySelectorAll('.navbar_link, .dropdown_link');
         navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                navbarToggle.classList.remove('active');
-                navbarCollapse.classList.remove('active');
-                document.body.classList.remove('no-scroll');
-            });
+            link.addEventListener('click', closeMenu);
         });
 
         // Close menu when clicking outside of the navbar container
         document.addEventListener('click', (e) => {
             const isClickInsideNavbar = navbarCollapse.contains(e.target) || navbarToggle.contains(e.target);
             if (!isClickInsideNavbar && navbarCollapse.classList.contains('active')) {
-                navbarToggle.classList.remove('active');
-                navbarCollapse.classList.remove('active');
-                document.body.classList.remove('no-scroll');
+                closeMenu();
             }
         });
     }

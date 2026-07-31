@@ -20,6 +20,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
 }
 
 /* =========================================
@@ -88,6 +89,7 @@
     align-items: center;
     justify-content: space-between;
     flex: 3;
+    gap: 2rem;
 }
 
 /* =========================================
@@ -209,7 +211,8 @@
     color: var(--primary-color);
 }
 
-.navbar_dropdown:hover .dropdown_menu{
+.navbar_dropdown:hover .dropdown_menu,
+.navbar_dropdown:focus-within .dropdown_menu{
     display: block;
 }
 
@@ -262,9 +265,10 @@ body.no-scroll {
 @media (max-width: 768px) {
     .navbar_container {
         padding: 1rem 1.5rem;
+        gap: 1rem;
     }
 
-    .navbar_logo {
+    .navbar_brand {
         flex: none;
     }
 
@@ -288,6 +292,7 @@ body.no-scroll {
         transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         z-index: 1001;
         border-left: 1px solid var(--border-color);
+        overflow-y: auto;
     }
 
     .navbar_collapse.active {
@@ -323,10 +328,6 @@ body.no-scroll {
         padding: 0.5rem 0 0.5rem 1rem;
         margin-top: 0.5rem;
         margin-left: 0.5rem;
-        display: none;
-    }
-
-    .navbar_dropdown:hover .dropdown_menu {
         display: block;
     }
 

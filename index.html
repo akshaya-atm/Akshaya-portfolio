@@ -17,55 +17,64 @@
                 <span class="status_dot"></span>Open for opportunities
             </div>
         </div>
-        <ul class="navbar_menu">
-            <li class="navbar_item">
-                <a href="#home" class="navbar_link">Home</a>
-            </li>
-            <li class="navbar_item">
-                <a href="#about" class="navbar_link">About</a>
-            </li>
 
-            <li class="navbar_item navbar_dropdown">
-                <a href="#projects" class="navbar_link">
-                    Projects
-                    <span class="dropdown_arrow">⌄</span>
+        <button class="navbar_toggle" id="navbar-toggle" type="button" aria-label="Open navigation menu" aria-controls="navbar-collapse" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <div class="navbar_collapse" id="navbar-collapse">
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="#home" class="navbar_link">Home</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="#about" class="navbar_link">About</a>
+                </li>
+
+                <li class="navbar_item navbar_dropdown">
+                    <a href="#projects" class="navbar_link">
+                        Projects
+                        <span class="dropdown_arrow">⌄</span>
+                    </a>
+                    <ul class="dropdown_menu">
+                        <li class="dropdown_item">
+                            <a href="#projects" class="dropdown_link">All Projects</a>
+                        </li>
+                        <li class="dropdown_item">
+                            <a href="#projects" class="dropdown_link" data-filter="ai">AI Applications</a>
+                        </li>
+                        <li class="dropdown_item">
+                            <a href="#projects" class="dropdown_link" data-filter="java">Backend Apps</a>
+                        </li>
+                        <li class="dropdown_item">
+                            <a href="#projects" class="dropdown_link" data-filter="web">Web Applications</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="navbar_item">
+                    <a href="assets/resume.pdf" class="navbar_link">
+                        Resume
+                    </a>
+                </li>
+                <li class="navbar_item">
+                    <a href="#contact" class="navbar_link">Contact</a>
+                </li>
+            </ul>
+
+            <div class="navbar_social">
+                <a href="https://github.com/akshaya-atm" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="devicon-github-original colored"></i>
                 </a>
-                <ul class="dropdown_menu">
-                    <li class="dropdown_item">
-                        <a href="#projects" class="dropdown_link">All Projects</a>
-                    </li>
-                    <li class="dropdown_item">
-                        <a href="#projects" class="dropdown_link" data-filter="ai">AI Applications</a>
-                    </li>
-                    <li class="dropdown_item">
-                        <a href="#projects" class="dropdown_link" data-filter="java">Backend Apps</a>
-                    </li>
-                    <li class="dropdown_item">
-                        <a href="#projects" class="dropdown_link" data-filter="web">Web Applications</a>
-                    </li>
-                </ul>
-            </li>
-
-            <li class="navbar_item">
-                <a href="assets/resume.pdf" class="navbar_link">
-                    Resume
+                <a href="https://www.linkedin.com/in/akshaya-atm/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="devicon-linkedin-plain colored"></i>
                 </a>
-            </li>
-            <li class="navbar_item">
-                <a href="#contact" class="navbar_link">Contact</a>
-            </li>
-        </ul>
-
-        <div class="navbar_social">
-            <a href="https://github.com/akshaya-atm" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                <i class="devicon-github-original colored"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/akshaya-atm/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                <i class="devicon-linkedin-plain colored"></i>
-            </a>
-            <a href="mailto:atm.akshaya87@gmail.com" aria-label="Email">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            </a>
+                <a href="mailto:atm.akshaya87@gmail.com" aria-label="Email">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </a>
+            </div>
         </div>
 
     </nav>
