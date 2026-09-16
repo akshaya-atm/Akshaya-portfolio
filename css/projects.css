@@ -241,6 +241,35 @@
     color: var(--primary-color);
 }
 
+.project_action_link.deck_link {
+    color: #6d5df6;
+    background: rgba(109, 93, 246, 0.08);
+    border: 1px solid rgba(109, 93, 246, 0.25);
+    padding: 0.25rem 0.65rem;
+    border-radius: 20px;
+    transition: all var(--transition);
+}
+
+.project_action_link.deck_link:hover {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 12px rgba(109, 93, 246, 0.3);
+}
+
+.project_card.has_bg .project_action_link.deck_link {
+    color: #c084fc;
+    background: rgba(192, 132, 252, 0.12);
+    border-color: rgba(192, 132, 252, 0.3);
+}
+
+.project_card.has_bg .project_action_link.deck_link:hover {
+    background: #c084fc;
+    color: #0f0c31;
+    border-color: #c084fc;
+    box-shadow: 0 4px 15px rgba(192, 132, 252, 0.4);
+}
+
 .project_action_link i {
     font-size: 1rem;
 }

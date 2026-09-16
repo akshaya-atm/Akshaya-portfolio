@@ -3,46 +3,92 @@ document.addEventListener('DOMContentLoaded', () => {
     //         PROJECTS DATA DATABASE
     // =========================================
     const projects = {
-        ai: {
-            title: "AI Applications",
+        featured: {
+            title: "Featured Flagship Projects",
+            shortTitle: "Featured",
             featured: [
                 {
-                    name: "Outlast AI",
+                    name: "AI Outlast — Multi-Agent Survivor Simulator",
                     image: "assets/outlast_ai.jpg",
-                    description: "Java conversational AI assistant powered by LangChain4j and the Gemini API, featuring persistent user chat memory buffer integration.",
-                    tech: ["Java", "LangChain4j", "Gemini API", "Maven"],
-                    github: "https://github.com",
-                    demo: "https://example.com/demo"
+                    description: "Autonomous LLM multi-agent Survivor simulation in Spring Boot 4 & Java 17 featuring multi-provider routing (Groq, Gemini, Ollama), asymmetric social memory matrices, and probabilistic deception mechanics.",
+                    tech: ["Java 17", "Spring Boot 4", "openai-java SDK", "Groq / Gemini", "Multithreading"],
+                    github: "https://github.com/akshaya-atm/Featured-Projects/tree/main/AI%20outlast",
+                    demo: "../Featured Projects/AI outlast/Outlast-Frontend/index.html",
+                    deck: "../Featured Projects/AI outlast/presentation-deck/index.html"
+                },
+                {
+                    name: "ShopSphere — Framework-Free E-Commerce Engine",
+                    image: "assets/secure_api.jpg",
+                    description: "High-performance full-stack e-commerce architecture built with 16 raw HttpServlet dispatchers, HikariCP connection pooling, ThreadLocal JWT authentication, PostgreSQL, and dual AI agents.",
+                    tech: ["Java Servlets", "PostgreSQL", "HikariCP", "JWT", "Vanilla JS"],
+                    github: "https://github.com/akshaya-atm/Featured-Projects/tree/main/ShopSphere",
+                    demo: "../Featured Projects/ShopSphere/presentation-deck/index.html",
+                    deck: "../Featured Projects/ShopSphere/presentation-deck/index.html"
+                },
+                {
+                    name: "Lift Management — Multithreaded Elevator System",
+                    image: "assets/secure_api.jpg",
+                    description: "Multithreaded elevator simulation in plain Java 11+. Features 1 worker thread per elevator, SCAN scheduling via dual min/max PriorityBlockingQueue, and 2-phase call flow with monitor locks.",
+                    tech: ["Java 11+", "Multithreading", "PriorityBlockingQueue", "SCAN Algorithm", "Monitor Sync"],
+                    github: "https://github.com/akshaya-atm/Featured-Projects/tree/main/Lift%20Management",
+                    demo: "../Featured Projects/Lift Management/presentation-deck/index.html",
+                    deck: "../Featured Projects/Lift Management/presentation-deck/index.html"
+                }
+            ],
+            others: []
+        },
+        ai: {
+            title: "AI Applications",
+            shortTitle: "AI Applications",
+            featured: [
+                {
+                    name: "AI Outlast — Multi-Agent Survivor Simulator",
+                    image: "assets/outlast_ai.jpg",
+                    description: "Autonomous LLM multi-agent Survivor simulation in Spring Boot 4 & Java 17 featuring multi-provider routing (Groq, Gemini, Ollama), asymmetric social memory matrices, and probabilistic deception mechanics.",
+                    tech: ["Java 17", "Spring Boot 4", "openai-java SDK", "Groq / Gemini", "Multithreading"],
+                    github: "https://github.com/akshaya-atm/Featured-Projects/tree/main/AI%20outlast",
+                    demo: "../Featured Projects/AI outlast/Outlast-Frontend/index.html",
+                    deck: "../Featured Projects/AI outlast/presentation-deck/index.html"
+                },
+                {
+                    name: "ShopSphere AI Engine",
+                    image: "assets/secure_api.jpg",
+                    description: "Role-isolated dual AI agent assistant embedded in an e-commerce platform with RBAC tool isolation and strict safety guardrails.",
+                    tech: ["Java", "LangChain4j", "Gemini API", "Servlets"],
+                    github: "https://github.com/akshaya-atm/Featured-Projects/tree/main/ShopSphere",
+                    demo: "../Featured Projects/ShopSphere/presentation-deck/index.html",
+                    deck: "../Featured Projects/ShopSphere/presentation-deck/index.html"
                 },
                 {
                     name: "MindClash Debate Platform",
                     image: "assets/mindclash.jpg",
                     description: "A semantic QA environment leveraging RAG pipelines and vector database indexing to parse and compare diverse document perspectives.",
                     tech: ["Java", "LangChain4j", "Vector DB", "Gemini API"],
-                    github: "https://github.com",
-                    demo: "assets/mindclash.jpg" // Snapshot
+                    github: "https://github.com/akshaya-atm/MindClash-Debater",
+                    demo: "assets/mindclash.jpg"
                 }
             ],
-            others: [
-                {
-                    name: "AI Chatbot",
-                    image: "assets/outlast_ai.jpg",
-                    description: "A lightweight conversational chatbot showcasing basic integration with large language models and session-based message buffers.",
-                    tech: ["Java", "Gemini API", "Maven"],
-                    github: "https://github.com",
-                    demo: "https://example.com/chatbot-demo"
-                }
-            ]
+            others: []
         },
         web: {
             title: "Web Applications",
+            shortTitle: "Web Applications",
             featured: [
+                {
+                    name: "ShopSphere Platform",
+                    image: "assets/secure_api.jpg",
+                    description: "Framework-free full-stack e-commerce engine built with 16 raw HttpServlet dispatchers, HikariCP connection pooling, ThreadLocal JWT auth, and PostgreSQL.",
+                    tech: ["Java Servlets", "PostgreSQL", "HikariCP", "JWT", "Vanilla JS"],
+                    github: "https://github.com/akshaya-atm/Featured-Projects/tree/main/ShopSphere",
+                    demo: "../Featured Projects/ShopSphere/presentation-deck/index.html",
+                    deck: "../Featured Projects/ShopSphere/presentation-deck/index.html"
+                },
                 {
                     name: "Portfolio Website",
                     image: "assets/portfolio_portal.jpg",
                     description: "Premium, fully responsive developer portfolio portal featuring clean CSS grids, dynamic tab switching, and mobile drawer menu navigations.",
                     tech: ["HTML", "CSS", "JavaScript", "Git"],
-                    github: "https://github.com",
+                    github: "https://github.com/akshaya-atm/Akshaya-portfolio",
                     demo: "#"
                 }
             ],
@@ -50,47 +96,49 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         java: {
             title: "Backend Applications",
+            shortTitle: "Backend Applications",
             featured: [
+                {
+                    name: "Lift Management System",
+                    image: "assets/secure_api.jpg",
+                    description: "Multithreaded elevator simulation in plain Java 11+. 1 worker thread per elevator, SCAN scheduling via dual min/max PriorityBlockingQueue, and 2-phase call flow.",
+                    tech: ["Java 11+", "Multithreading", "SCAN Algorithm", "Monitor Synchronization"],
+                    github: "https://github.com/akshaya-atm/Featured-Projects/tree/main/Lift%20Management",
+                    demo: "../Featured Projects/Lift Management/presentation-deck/index.html",
+                    deck: "../Featured Projects/Lift Management/presentation-deck/index.html"
+                },
                 {
                     name: "AuthenticationJ",
                     image: "assets/secure_api.jpg",
                     description: "A secure Java backend authentication architecture featuring user password encryption, user persistence layers, and role-based JWT session handling.",
                     tech: ["Java", "Spring Boot", "PostgreSQL", "JWT"],
-                    github: "https://github.com",
-                    demo: "assets/secure_api.jpg" // Snapshot
+                    github: "https://github.com/akshaya-atm/AuthenticationJ",
+                    demo: "assets/secure_api.jpg"
                 }
             ],
             others: [
                 {
-                    name: "Tic Tac Toe",
+                    name: "Hyperloop Booking System",
+                    image: "assets/secure_api.jpg",
+                    description: "Low-level design for a high-concurrency ticket booking and seat allocation engine with station route calculation.",
+                    tech: ["Java", "LLD", "OOP"],
+                    github: "https://github.com/akshaya-atm/HyperloopBookingSystem",
+                    demo: "assets/secure_api.jpg"
+                },
+                {
+                    name: "Zkart LLD",
+                    image: "assets/secure_api.jpg",
+                    description: "E-Commerce Low Level Design modeling inventory, user sessions, cart management, and order checkout pipelines.",
+                    tech: ["Java", "OOP", "Design Patterns"],
+                    github: "https://github.com/akshaya-atm/ZkartLLD",
+                    demo: "assets/secure_api.jpg"
+                },
+                {
+                    name: "Tic Tac Toe AI",
                     image: "assets/secure_api.jpg",
                     description: "A classic desktop two-player Tic Tac Toe game implementing a minimax search algorithm for adjustable AI difficulty levels.",
-                    tech: ["Java", "Swing", "OOP"],
-                    github: "https://github.com",
-                    demo: "assets/secure_api.jpg"
-                },
-                {
-                    name: "Minesweeper",
-                    image: "assets/secure_api.jpg",
-                    description: "A standard desktop grid game built in Java Swing featuring recursive cell uncovering, clock indicators, and mine flags.",
-                    tech: ["Java", "Swing"],
-                    github: "https://github.com",
-                    demo: "assets/secure_api.jpg"
-                },
-                {
-                    name: "FLAMES",
-                    image: "assets/secure_api.jpg",
-                    description: "A relationship compatibility game created in Java utilizing core string algorithms, char checking, and layout managers.",
-                    tech: ["Java", "Console"],
-                    github: "https://github.com",
-                    demo: "assets/secure_api.jpg"
-                },
-                {
-                    name: "CRUD Applications",
-                    image: "assets/secure_api.jpg",
-                    description: "A database-driven client registry system managing create, read, update, and delete actions connected securely via JDBC.",
-                    tech: ["Java", "PostgreSQL", "JDBC"],
-                    github: "https://github.com",
+                    tech: ["Java", "Swing", "Minimax"],
+                    github: "https://github.com/akshaya-atm",
                     demo: "assets/secure_api.jpg"
                 }
             ]
@@ -113,7 +161,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const catData = projects[catKey];
         if (catData) {
             const totalCount = (catData.featured ? catData.featured.length : 0) + (catData.others ? catData.others.length : 0);
-            btn.textContent = `${catData.title} (${totalCount})`;
+            const label = catData.shortTitle || catData.title;
+            btn.textContent = `${label} (${totalCount})`;
         }
     });
 
@@ -141,6 +190,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     const hasBgClass = proj.image ? 'has_bg' : '';
                     const bgStyle = proj.image ? `style="background-image: url('${proj.image}'), url('${fallbackUrl}');"` : '';
 
+                    const deckBtn = proj.deck ? `<a href="${proj.deck}" target="_blank" class="project_action_link deck_link" rel="noopener">📊 Presentation Deck</a>` : '';
+                    const demoBtn = proj.demo && !proj.deck ? `<a href="${proj.demo}" target="_blank" class="project_action_link" rel="noopener">${actionLabel}</a>` : '';
+
                     const cardHtml = `
                         <div class="project_card featured_card ${hasBgClass}" ${bgStyle}>
                             <div class="project_card_content">
@@ -151,7 +203,8 @@ document.addEventListener('DOMContentLoaded', () => {
                                 </div>
                                 <div class="project_card_actions">
                                     <a href="${proj.github}" target="_blank" class="project_action_link" rel="noopener"><i class="devicon-github-original"></i> GitHub</a>
-                                    ${proj.demo ? `<a href="${proj.demo}" target="_blank" class="project_action_link" rel="noopener">${actionLabel}</a>` : ''}
+                                    ${deckBtn}
+                                    ${demoBtn}
                                 </div>
                             </div>
                         </div>
@@ -172,6 +225,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     const isSnapshot = proj.demo && (proj.demo.endsWith('.jpg') || proj.demo.endsWith('.png'));
                     const actionLabel = isSnapshot ? '📸 Snapshot' : '🌐 Live Demo';
 
+                    const deckBtn = proj.deck ? `<a href="${proj.deck}" target="_blank" class="project_action_link deck_link" rel="noopener">📊 Presentation Deck</a>` : '';
+                    const demoBtn = proj.demo && !proj.deck ? `<a href="${proj.demo}" target="_blank" class="project_action_link" rel="noopener">${actionLabel}</a>` : '';
+
                     const cardHtml = `
                         <div class="project_card other_card">
                             <div class="project_card_content">
@@ -182,7 +238,8 @@ document.addEventListener('DOMContentLoaded', () => {
                                 </div>
                                 <div class="project_card_actions">
                                     <a href="${proj.github}" target="_blank" class="project_action_link" rel="noopener"><i class="devicon-github-original"></i> GitHub</a>
-                                    ${proj.demo ? `<a href="${proj.demo}" target="_blank" class="project_action_link" rel="noopener">${actionLabel}</a>` : ''}
+                                    ${deckBtn}
+                                    ${demoBtn}
                                 </div>
                             </div>
                         </div>
