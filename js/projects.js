@@ -108,40 +108,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     deck: "../Featured Projects/Lift Management/presentation-deck/index.html"
                 },
                 {
-                    name: "AuthenticationJ",
+                    name: "Hyperloop Booking System",
                     image: "assets/secure_api.jpg",
-                    description: "A secure Java backend authentication architecture featuring user password encryption, user persistence layers, and role-based JWT session handling.",
-                    tech: ["Java", "Spring Boot", "PostgreSQL", "JWT"],
-                    github: "https://github.com/akshaya-atm/AuthenticationJ",
+                    description: "High-concurrency ticket booking and seat allocation LLD engine with dynamic station route calculation and OOP design patterns.",
+                    tech: ["Java", "LLD", "Concurrent Data Structures", "OOP Patterns"],
+                    github: "https://github.com/akshaya-atm/HyperloopBookingSystem",
                     demo: "assets/secure_api.jpg"
                 }
             ],
-            others: [
-                {
-                    name: "Hyperloop Booking System",
-                    image: "assets/secure_api.jpg",
-                    description: "Low-level design for a high-concurrency ticket booking and seat allocation engine with station route calculation.",
-                    tech: ["Java", "LLD", "OOP"],
-                    github: "https://github.com/akshaya-atm/HyperloopBookingSystem",
-                    demo: "assets/secure_api.jpg"
-                },
-                {
-                    name: "Zkart LLD",
-                    image: "assets/secure_api.jpg",
-                    description: "E-Commerce Low Level Design modeling inventory, user sessions, cart management, and order checkout pipelines.",
-                    tech: ["Java", "OOP", "Design Patterns"],
-                    github: "https://github.com/akshaya-atm/ZkartLLD",
-                    demo: "assets/secure_api.jpg"
-                },
-                {
-                    name: "Tic Tac Toe AI",
-                    image: "assets/secure_api.jpg",
-                    description: "A classic desktop two-player Tic Tac Toe game implementing a minimax search algorithm for adjustable AI difficulty levels.",
-                    tech: ["Java", "Swing", "Minimax"],
-                    github: "https://github.com/akshaya-atm",
-                    demo: "assets/secure_api.jpg"
-                }
-            ]
+            others: []
         }
     };
 
