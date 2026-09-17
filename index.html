@@ -196,7 +196,10 @@
             <h2 class="section_title">Projects</h2>
             <!-- Category Tabs Control -->
             <div class="project_tabs">
-                <button class="project_tab_btn active" data-category="featured">* Featured (3)</button>
+                <button class="project_tab_btn active" data-category="featured">
+                    <span class="featured_tab_star_badge" title="Featured Category">⭐</span>
+                    * Featured (3)
+                </button>
                 <button class="project_tab_btn" data-category="ai">AI Applications</button>
                 <button class="project_tab_btn" data-category="web">Web Applications</button>
                 <button class="project_tab_btn" data-category="java">Backend Applications</button>
@@ -358,6 +361,25 @@
     </footer>
 
 </main>
+
+<!-- PRESENTATION DECK MODAL -->
+<div id="deck-modal" class="deck_modal_overlay" aria-hidden="true">
+    <div class="deck_modal_container">
+        <div class="deck_modal_header">
+            <div class="deck_modal_header_left">
+                <span class="deck_modal_badge">📊 Presentation Deck</span>
+                <h3 class="deck_modal_title" id="deck-modal-title">Project Presentation</h3>
+            </div>
+            <div class="deck_modal_header_right">
+                <a id="deck-modal-external-link" href="#" target="_blank" rel="noopener" class="deck_modal_external_btn" title="Open deck in new tab">↗ Open in New Tab</a>
+                <button class="deck_modal_close_btn" id="deck-modal-close" aria-label="Close modal">&times;</button>
+            </div>
+        </div>
+        <div class="deck_modal_body">
+            <iframe id="deck-modal-iframe" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
 
 <script src="js/main.js"></script>
 <script src="js/projects.js"></script>
