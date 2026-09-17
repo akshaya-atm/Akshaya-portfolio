@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const projects = {
         featured: {
             title: "Featured Flagship Projects",
-            shortTitle: "Featured",
+            shortTitle: "* Featured",
             featured: [
                 {
                     name: "AI Outlast — Multi-Agent Survivor Simulator",
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 {
                     name: "ShopSphere — Framework-Free E-Commerce Engine",
-                    image: "assets/secure_api.jpg",
+                    image: "assets/shopsphere.png",
                     description: "High-performance full-stack e-commerce architecture built with 16 raw HttpServlet dispatchers, HikariCP connection pooling, ThreadLocal JWT authentication, PostgreSQL, and dual AI agents.",
                     tech: ["Java Servlets", "PostgreSQL", "HikariCP", "JWT", "Vanilla JS"],
                     github: "https://github.com/akshaya-atm/Featured-Projects/tree/main/ShopSphere",
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 {
                     name: "Lift Management — Multithreaded Elevator System",
-                    image: "assets/secure_api.jpg",
+                    image: "assets/lift_management_diagram.jpg",
                     description: "Multithreaded elevator simulation in plain Java 11+. Features 1 worker thread per elevator, SCAN scheduling via dual min/max PriorityBlockingQueue, and 2-phase call flow with monitor locks.",
                     tech: ["Java 11+", "Multithreading", "PriorityBlockingQueue", "SCAN Algorithm", "Monitor Sync"],
                     github: "https://github.com/akshaya-atm/Featured-Projects/tree/main/Lift%20Management",
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 {
                     name: "ShopSphere AI Engine",
-                    image: "assets/secure_api.jpg",
+                    image: "assets/shopsphere.png",
                     description: "Role-isolated dual AI agent assistant embedded in an e-commerce platform with RBAC tool isolation and strict safety guardrails.",
                     tech: ["Java", "LangChain4j", "Gemini API", "Servlets"],
                     github: "https://github.com/akshaya-atm/Featured-Projects/tree/main/ShopSphere",
@@ -61,11 +61,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 {
                     name: "MindClash Debate Platform",
-                    image: "assets/mindclash.jpg",
+                    image: "assets/mindclash.png",
                     description: "A semantic QA environment leveraging RAG pipelines and vector database indexing to parse and compare diverse document perspectives.",
                     tech: ["Java", "LangChain4j", "Vector DB", "Gemini API"],
                     github: "https://github.com/akshaya-atm/MindClash-Debater",
-                    demo: "assets/mindclash.jpg"
+                    demo: "assets/mindclash_diagram.jpg"
                 }
             ],
             others: []
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
             featured: [
                 {
                     name: "ShopSphere Platform",
-                    image: "assets/secure_api.jpg",
+                    image: "assets/shopsphere.png",
                     description: "Framework-free full-stack e-commerce engine built with 16 raw HttpServlet dispatchers, HikariCP connection pooling, ThreadLocal JWT auth, and PostgreSQL.",
                     tech: ["Java Servlets", "PostgreSQL", "HikariCP", "JWT", "Vanilla JS"],
                     github: "https://github.com/akshaya-atm/Featured-Projects/tree/main/ShopSphere",
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
             featured: [
                 {
                     name: "Lift Management System",
-                    image: "assets/secure_api.jpg",
+                    image: "assets/lift_management_diagram.jpg",
                     description: "Multithreaded elevator simulation in plain Java 11+. 1 worker thread per elevator, SCAN scheduling via dual min/max PriorityBlockingQueue, and 2-phase call flow.",
                     tech: ["Java 11+", "Multithreading", "SCAN Algorithm", "Monitor Synchronization"],
                     github: "https://github.com/akshaya-atm/Featured-Projects/tree/main/Lift%20Management",
@@ -109,11 +109,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 {
                     name: "Hyperloop Booking System",
-                    image: "assets/secure_api.jpg",
+                    image: "assets/hyperloop_diagram.jpg",
                     description: "High-concurrency ticket booking and seat allocation LLD engine with dynamic station route calculation and OOP design patterns.",
                     tech: ["Java", "LLD", "Concurrent Data Structures", "OOP Patterns"],
                     github: "https://github.com/akshaya-atm/HyperloopBookingSystem",
-                    demo: "assets/secure_api.jpg"
+                    demo: "assets/hyperloop_diagram.jpg"
                 }
             ],
             others: []
