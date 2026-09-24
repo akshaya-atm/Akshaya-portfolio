@@ -8,16 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
             shortTitle: "* Featured",
             featured: [
                 {
-                    name: "AI Outlast — Multi-Agent Survivor Simulator",
-                    image: "assets/outlast_ai.jpg",
-                    description: "Autonomous LLM multi-agent Survivor simulation in Spring Boot 4 & Java 17 featuring multi-provider routing (Groq, Gemini, Ollama), asymmetric social memory matrices, and probabilistic deception mechanics.",
-                    tech: ["Java 17", "Spring Boot 4", "openai-java SDK", "Groq / Gemini", "Multithreading"],
-                    github: "https://github.com/akshaya-atm/Featured-Projects/tree/main/AI%20outlast",
-                    readme: "https://github.com/akshaya-atm/Featured-Projects/blob/main/AI%20outlast/README.md",
-                    demo: "decks/ai-outlast/index.html",
-                    deck: "decks/ai-outlast/index.html"
-                },
-                {
                     name: "Employee Leave Management System (ELMS)",
                     image: "assets/elms.png",
                     description: "An intelligent Employee Leave Management System that combines a Spring Boot backend with an AI-powered conversational interface for leave applications and policy Q&A via pgvector.",
@@ -26,6 +16,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     readme: "https://github.com/akshaya-atm/Employee-Leave-Management-System/blob/main/README.md",
                     demo: "decks/elms/index.html",
                     deck: "decks/elms/index.html"
+                },
+                {
+                    name: "AI Outlast — Multi-Agent Survivor Simulator",
+                    image: "assets/outlast_ai.jpg",
+                    description: "Autonomous LLM multi-agent Survivor simulation in Spring Boot 4 & Java 17 featuring multi-provider routing (Groq, Gemini, Ollama), asymmetric social memory matrices, and probabilistic deception mechanics.",
+                    tech: ["Java 17", "Spring Boot 4", "openai-java SDK", "Groq / Gemini", "Multithreading"],
+                    github: "https://github.com/akshaya-atm/Featured-Projects/tree/main/AI%20outlast",
+                    readme: "https://github.com/akshaya-atm/Featured-Projects/blob/main/AI%20outlast/README.md",
+                    demo: "decks/ai-outlast/index.html",
+                    deck: "decks/ai-outlast/index.html"
                 },
                 {
                     name: "Lift Management — Multithreaded Elevator System",
@@ -44,6 +44,16 @@ document.addEventListener('DOMContentLoaded', () => {
             title: "AI Applications",
             shortTitle: "AI Applications",
             featured: [
+                {
+                    name: "Employee Leave Management System (ELMS)",
+                    image: "assets/elms.png",
+                    description: "An intelligent Employee Leave Management System that combines a Spring Boot backend with an AI-powered conversational interface for leave applications and policy Q&A via pgvector.",
+                    tech: ["Java 21", "Spring Boot", "Spring AI", "PostgreSQL", "pgvector"],
+                    github: "https://github.com/akshaya-atm/Employee-Leave-Management-System",
+                    readme: "https://github.com/akshaya-atm/Employee-Leave-Management-System/blob/main/README.md",
+                    demo: "decks/elms/index.html",
+                    deck: "decks/elms/index.html"
+                },
                 {
                     name: "AI Outlast — Multi-Agent Survivor Simulator",
                     image: "assets/outlast_ai.jpg",
