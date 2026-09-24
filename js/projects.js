@@ -8,10 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
             shortTitle: "* Featured",
             featured: [
                 {
-                    name: "Employee Leave Management System (ELMS)",
+                    name: "Employee Leave Management System (ELMS) — Agentic RAG & MCP",
                     image: "assets/elms.png",
-                    description: "An intelligent Employee Leave Management System that combines a Spring Boot backend with an AI-powered conversational interface for leave applications and policy Q&A via pgvector.",
-                    tech: ["Java 21", "Spring Boot", "Spring AI", "PostgreSQL", "pgvector"],
+                    description: "Agentic Employee Leave Management System combining a Spring Boot backend with an AI-powered conversational interface. Features RAG for policy Q&A via pgvector and Model Context Protocol (MCP) integration for secure tool execution.",
+                    tech: ["Java 21", "Spring AI", "Agentic RAG", "MCP", "pgvector"],
                     github: "https://github.com/akshaya-atm/Employee-Leave-Management-System",
                     readme: "https://github.com/akshaya-atm/Employee-Leave-Management-System/blob/main/README.md",
                     demo: "decks/elms/index.html",
@@ -45,10 +45,10 @@ document.addEventListener('DOMContentLoaded', () => {
             shortTitle: "AI Applications",
             featured: [
                 {
-                    name: "Employee Leave Management System (ELMS)",
+                    name: "Employee Leave Management System (ELMS) — Agentic RAG & MCP",
                     image: "assets/elms.png",
-                    description: "An intelligent Employee Leave Management System that combines a Spring Boot backend with an AI-powered conversational interface for leave applications and policy Q&A via pgvector.",
-                    tech: ["Java 21", "Spring Boot", "Spring AI", "PostgreSQL", "pgvector"],
+                    description: "Agentic Employee Leave Management System combining a Spring Boot backend with an AI-powered conversational interface. Features RAG for policy Q&A via pgvector and Model Context Protocol (MCP) integration for secure tool execution.",
+                    tech: ["Java 21", "Spring AI", "Agentic RAG", "MCP", "pgvector"],
                     github: "https://github.com/akshaya-atm/Employee-Leave-Management-System",
                     readme: "https://github.com/akshaya-atm/Employee-Leave-Management-System/blob/main/README.md",
                     demo: "decks/elms/index.html",
