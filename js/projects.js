@@ -18,14 +18,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     deck: "decks/ai-outlast/index.html"
                 },
                 {
-                    name: "ShopSphere — Framework-Free E-Commerce Engine",
-                    image: "assets/shopsphere.png",
-                    description: "High-performance full-stack e-commerce architecture built with 16 raw HttpServlet dispatchers, HikariCP connection pooling, ThreadLocal JWT authentication, PostgreSQL, and dual AI agents.",
-                    tech: ["Java Servlets", "PostgreSQL", "HikariCP", "JWT", "Vanilla JS"],
-                    github: "https://github.com/akshaya-atm/Featured-Projects/tree/main/ShopSphere",
-                    readme: "https://github.com/akshaya-atm/Featured-Projects/blob/main/ShopSphere/README.md",
-                    demo: "decks/shopsphere/index.html",
-                    deck: "decks/shopsphere/index.html"
+                    name: "Employee Leave Management System (ELMS)",
+                    image: "assets/elms.png",
+                    description: "An intelligent Employee Leave Management System that combines a Spring Boot backend with an AI-powered conversational interface for leave applications and policy Q&A via pgvector.",
+                    tech: ["Java 21", "Spring Boot", "Spring AI", "PostgreSQL", "pgvector"],
+                    github: "https://github.com/akshaya-atm/Employee-Leave-Management-System",
+                    readme: "https://github.com/akshaya-atm/Employee-Leave-Management-System/blob/main/README.md",
+                    demo: "decks/elms/index.html",
+                    deck: "decks/elms/index.html"
                 },
                 {
                     name: "Lift Management — Multithreaded Elevator System",
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
             shortTitle: "Web Applications",
             featured: [
                 {
-                    name: "ShopSphere — Framework-Free E-Commerce Engine",
+                    name: "ShopSphere — Framework-Free E-Commerce Engine & Tool-Calling AI",
                     image: "assets/shopsphere.png",
                     description: "Framework-free full-stack e-commerce engine built with 16 raw HttpServlet dispatchers, HikariCP connection pooling, ThreadLocal JWT auth, and PostgreSQL.",
                     tech: ["Java Servlets", "PostgreSQL", "HikariCP", "JWT", "Vanilla JS"],
