@@ -89,7 +89,7 @@
 }
 
 .hero_headline {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     font-weight: 850;
     line-height: 1.15;
     color: var(--text-color);
@@ -118,19 +118,7 @@
 }
 
 .highlight_word {
-    background: linear-gradient(
-        90deg,
-        #6D5DF6,
-        #A855F7,
-        #EC4899,
-        #6D5DF6
-    );
-    background-size: 200% auto;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
-    animation: shimmer 4s linear infinite;
+    color: var(--primary-color);
 }
 
 .hero_description {
@@ -267,7 +255,7 @@
     }
 
     .hero_headline {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         line-height: 1.25;
         margin: 0.5rem 0 1rem 0;
     }
