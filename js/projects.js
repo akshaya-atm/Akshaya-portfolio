@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 {
                     name: "Portfolio Website",
-                    image: "assets/outlast_ai.jpg",
+                    image: "assets/portfolio.png",
                     description: "Premium, fully responsive developer portfolio portal featuring clean CSS grids, dynamic tab switching, and mobile drawer menu navigations.",
                     tech: ["HTML", "CSS", "JavaScript", "Git"],
                     github: "https://github.com/akshaya-atm/Akshaya-portfolio",
